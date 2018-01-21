@@ -1,40 +1,40 @@
 # Site settings
-baseurl = "http://nodejh.com/"
-# HTML Language Code Reference, such as en, zh-cn
+baseurl = "your_site_url_address"
 languageCode = "en"
-title = "Blog Title"
+title = "site title"
 theme = "hugo-theme-cactus-plus"
-# Enter your tracking code to enable Google Analytics
-googleAnalytics = "your_google_analytics_code"
-hasCJKLanguage = true
+googleAnalytics = "your_google_analytics_id"
+# Set the value to true if your site include CJK (Chinese, Japanese, and Korean languages) characters
+hasCJKLanguage = false
 
 [params]
-	name = "Hugo"
-	description = "Blog Description"
-	bio = "Blog biology"
-	# Enter optionally your twitter account
-	twitter = "your_twotter"
-	enableRSS = false
+	author = "site_author"
+	description = "Site Description"
+	bio = "author biography"
 
-	# Disqus comment
+	twitter = "your_twitter_id"
+	facebook = "your_facebook_id"
+
+	enableRSS = true
+	enableToc = true
+
+	enableDisqus = true
 	disqusShortname = "your_disqus_short_name"
-	# Disable disqus comments by set `enableDisqus = "false"`
-	enableDisqus = false
 
-	# Duoshuo comment
-	duoshuoShortname = "your_duoshuo_short_name"
-	# Disable duoshuo comments by set `enableDuoshuo = "false"`
-	enableDuoshuo = false
 
-	enableGithubIssuesTips = false
+	enableSummary = true
+	# Set the value to true if use description in post front matter replace content summary
+	useDescriptionReplaceSummary = false
 
-	# Enable googleAnalytics
-	enableGoogleAnalytics = false
 
-	# Enable baiduAnalytics
+	enableGoogleAnalytics = true
 	enableBaiduAnalytics = false
-	# Baidu Tongji Code
-	baiduAnalytics = 'your_baidu_tongji_code'
+	# Set the value to your baidu analysis code if you want to use baidu analytics
+	baiduAnalytics = 'your_baidu_analysis_code'
+
+	enableTwitterCard = true
+	# The url for twitter card image, default is avatar.png in static/images directory
+	twitterCardImage = ""
 
 	# Add custom assets with their paths relative to the static folder
 	customCSS = []
@@ -48,16 +48,20 @@ hasCJKLanguage = true
 	about = ""
 	archive = ""
 	subscribe = ""
-	tags = ""
-	# Pagination links
+
 	olderPosts = ""
 	newerPosts = ""
-	readMore = ""
 	copyright = ""
-	# Sharing options and author information in posts
-	aboutAuthor = "I am so interesting."
+
+	# show latest posts in single page
+	showLatestPosts = false
+	readMore = ""
+
+	# Share
+	enableShare = true
 	tweet = ""
 	share = ""
+
 	# 404 page
 	title404 = ""
 	subtitle404 = ""
@@ -70,6 +74,6 @@ hasCJKLanguage = true
 
 # Add additional social link entries underneath
 [social]
-	facebook-square = "your_facebook_link"
-  twitter-square = "your_twitter_link"
-  github-square = "your_github_link"
+	facebook-square = "https://www.facebook.com/nodejh"
+	twitter-square = "https://www.twitter.com/nodejh"
+	github-square = "https://www.github.com/nodejh"
