@@ -1,0 +1,9 @@
+JSON.stringify(Array.from(document.getElementsByClassName("comment")).filter(
+(quote)=>{ 
+    return quote.previousSibling!=null && (quote.previousSibling.textContent.includes("feeling sincerely don't know") || quote.previousSibling.textContent.includes("feeling emptied"))}).map((quote)=>
+    (
+       
+        {
+    q: quote.innerText,
+    published: Date.parse(quote.previousElementSibling.innerText.substring(quote.previousElementSibling.innerText.indexOf(',') + 1).replace(/at(.*)/, ""))
+})))
